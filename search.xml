@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title><![CDATA[Hello world]]></title>
+    <url>%2FAngelNH_333%2FHelloworld.html</url>
+    <content type="text"><![CDATA[Hello world记一次过程经历​ 最近，自己在搭一个博客，用 hexo+github，一开始按照网上的教程下载相应的软件，cmd安装，git bash 安装hexo，最开始可是在自己的本地可以预览，效果不错，直接就上传到github上的我的repo，结果cmd出错，由于对hexo 文件的位置不清，和出现的错误，我直接就删除了hexo，但是不是直接的卸载，有些文件还在（找不到啊 呜呜~），我用重新npm安装，发现还是不行，当时头大到想要格式化电脑了（还好没有，要不然就要重新慢慢下载了），然后我去找baidu，简书，发现自己的许多错误操作。好吧，我又从新开始。还是有error，我就按个所错误，发现自己有许多的本地配置没有设置，我就一条一条的修改（可气人了，一步踩一个坑，一步填一个坑），花了两天才把本地配置好（上课没时间啊）。 ​ 又因为，默认的主题很low（只是个人而言），不怎么喜欢，想换个主题，hexo上面有好多的主题，一个一个翻看，也没有喜欢的，现在比较流行的是NEXT主题（没错我找了度娘），就在网上下载NEXT主题包，一开始的主题内容，没设计的，所以我又找了度娘，还在CSDN上搜搜，发现许多大佬掉了许多的坑，也有填坑的方法(坑和经验，傻傻分不清），就开始一步一步自己搭，终于，经过一天多的自己的骚操作，在清明节的下午本地可以看到比较好的主题设置（还有点不满意，后续会修改）。 感受​ （真是不作死不会死，谁TM知道我为什么突然想到建博客呢！） ​ 经过三天多自己的摸索，我这个小小白终于把自己的blog建成了（~~热烈欢迎大家访问）。在建博客的过程中，真是有点头大了，因为自己对命令行操作一点不了解，完全是两眼一模黑，在黑暗中摸索（哈哈，有点夸张），出现错误也不知道哪里的问题，真的很感谢度娘的帮助（说白了，多谢大佬们的坑啊）。 ​ 这篇文章的标题是printf(“Hello,world”),学C语言的都知道这是入门的基础程序，我想用这个标题想说，当你去接触一个陌生不懂的东西时，不是一帆风顺的，总会有大波小浪，不过，经过自己的一步一步的摸索总会找到自己的___（你懂的哈），不管如何都不要放弃，既然已经迈开了重要的第一步，就要坚持走到终点。 ​ 对了，还有还有，“生命在于运动，电脑在于折腾啊”，不管会不会，先折腾折腾吧（坏了我可不管~~) ​ . ​ . ​ . ​ . ​ . ​ . ​ . ​ . ​ 度娘，真帅！！！]]></content>
+      <categories>
+        <category>life</category>
+      </categories>
+      <tags>
+        <tag>life</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Markdown语法]]></title>
+    <url>%2FAngelNH_333%2FMarkdown%E8%AF%AD%E6%B3%95.html</url>
+    <content type="text"><![CDATA[Markdown 语法最近经过几天的奋斗，自己的博客基本框架终于搭建成功，接下来就是开始写文章了，不过上来就碰上个头疼的问题，就是怎么写的问题，我就想度娘请教（度娘，真帅），说是用Markdown语法写，最近在Notebook上写Python的学习笔记，老师说过要自学Markdown语法，说是非常简单（没错，就是很简单），下面就是Markdown的语法介绍啦，要好好学哟。 在编写 Markdown 时，强烈的推荐给大家一款简洁易用的 Markdown 编辑器 —— Typora 按照官方的说法就是 简单而强大，它不仅支持原生的语法，也支持对应的快捷键，更重要的是它还可以 实时预览 这里附上 Typora 的下载地址：https://www.typora.io/，有兴趣的朋友可以下载来试试 好，下面开始进入正题，介绍一些常用的 Markdown 语法 (1) 标题Markdown语法：#一级标题 ##二级标题 ###三级标题 ####四级标题 #####五级标题 ######六级标题 Typora快捷键：Ctrl + 1：一级标题 Ctrl + 2：二级标题 Ctrl + 3：三级标题 Ctrl + 4：四级标题 Ctrl + 5：五级标题 Ctrl + 6：六级标题 (2)粗体、斜体、删除线Markdown语法：1.*斜体* 2.**粗体** 3.***加粗斜线*** 4.~~删除线~~ Typora快捷键：Ctrl+l ：斜体 Ctrl+B：粗体 Ctrl+U：下划线 Alt + Shift + 5 ：删除线 (3) 引用块Markdown语法：1.&gt; 文字引用 Typora快捷键：Ctrl + Shift + Q (4)代码块Markdown语法：1. &#39; 行内代码&#39; 2.&#39;&#39;&#39; 多行代码&#39;&#39;&#39; Typora快捷键：行内代码： Ctrl + Shift + ` 多行代码：Ctrl + Shift +K (5)公式块Markdown语法：1.$$数学公式$$ Typora快捷键：Ctrl + Shift + M (6)分割线Markdown 语法：方法1：--- 方法2：+++ 方法3：*** (7)列表Markdown语法：1.有序列表项 2. * 无序列表项 3. + 无序列表项 4. - 无序列表项 Typora快捷键：有序列表项：Ctrl+Shift+[ 有序列表项：Ctrl+Shift+] (8) 表格Markdown语法：1. 表头1|表头2 -|-|- 内容11|内容12 内容21|内容22 Typora 快捷键：Ctrl+T (9)超链接Markdown语法：方法一：[链接文字](链接地址 &quot;链接描述&quot;) 例如：[示例链接](https://www.example.com/ &quot;示例链接&quot;) 方法二：&lt;链接地址&gt; 例如：&lt;https://www.example.com/&gt; Typora快捷键：Ctrl+K (10)图片Markdown语法：![图片文字](图片地址 &quot;图片描述&quot;) 例如：![示例图片](https://www.example.com/example.PNG &quot;示例图片&quot;) Typora快捷键：Ctrl+Shift+I]]></content>
+      <categories>
+        <category>Markdown语法</category>
+      </categories>
+      <tags>
+        <tag>Markdown</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[Hello World]]></title>
+    <url>%2FAngelNH_333%2Fhello-world.html</url>
+    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
+      <tags>
+        <tag>life</tag>
+      </tags>
+  </entry>
+</search>
