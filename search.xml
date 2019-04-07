@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title><![CDATA[Markdown语法]]></title>
-    <url>AngelNH_333%2FMarkdown%E8%AF%AD%E6%B3%95.html</url>
+    <url>%2FAngelNH_333%2FMarkdown%E8%AF%AD%E6%B3%95.html</url>
     <content type="text"><![CDATA[Markdown 语法最近经过几天的奋斗，自己的博客基本框架终于搭建成功，接下来就是开始写文章了，不过上来就碰上个头疼的问题，就是怎么写的问题，我就想度娘请教（度娘，真帅），说是用Markdown语法写，最近在Notebook上写Python的学习笔记，老师说过要自学Markdown语法，说是非常简单（没错，就是很简单），下面就是Markdown的语法介绍啦，要好好学哟。 在编写 Markdown 时，强烈的推荐给大家一款简洁易用的 Markdown 编辑器 —— Typora 按照官方的说法就是 简单而强大，它不仅支持原生的语法，也支持对应的快捷键，更重要的是它还可以 实时预览 这里附上 Typora 的下载地址：点击这里 , 有兴趣的朋友可以下载来试试 好，下面开始进入正题，介绍一些常用的 Markdown 语法 (1) 标题Markdown语法：1234567891011#一级标题``##二级标题``###三级标题``####四级标题``#####五级标题``######六级标题 Typora快捷键：1234567891011Ctrl + 1：一级标题Ctrl + 2：二级标题Ctrl + 3：三级标题Ctrl + 4：四级标题Ctrl + 5：五级标题Ctrl + 6：六级标题 (2)粗体、斜体、删除线Markdown语法：1234567*斜体*``**粗体**``***加粗斜线***``~~删除线~~ Typora快捷键：1234567Ctrl+l ：斜体Ctrl+B：粗体Ctrl+U：下划线Alt + Shift + 5 ：删除线 (3) 引用块Markdown语法：&gt; 文字引用 Typora快捷键：1Ctrl + Shift + Q (4)代码块Markdown语法：&#39; 行内代码&#39; &#39;&#39;&#39; 多行代码&#39;&#39;&#39; Typora快捷键：123行内代码： Ctrl + Shift + `多行代码：Ctrl + Shift +K (5)公式块Markdown语法：1$$数学公式$$ Typora快捷键：1Ctrl + Shift + M (6)分割线Markdown 语法：12345方法1：---``方法2：+++``方法3：*** (7)列表Markdown语法：1.有序列表项 2. * 无序列表项 3. + 无序列表项 4. - 无序列表项 Typora快捷键：有序列表项：Ctrl+Shift+[ 有序列表项：Ctrl+Shift+] (8) 表格Markdown语法：1. 表头1|表头2 -|-|- 内容11|内容12 内容21|内容22 Typora 快捷键：Ctrl+T (9)超链接Markdown语法：方法一：[链接文字](链接地址 &quot;链接描述&quot;) 例如：[示例链接](https://www.example.com/ &quot;示例链接&quot;) 方法二：&lt;链接地址&gt; 例如：&lt;https://www.example.com/&gt; Typora快捷键：Ctrl+K (10)图片Markdown语法：![图片文字](图片地址 &quot;图片描述&quot;) 例如：![示例图片](https://www.example.com/example.PNG &quot;示例图片&quot;) Typora快捷键：Ctrl+Shift+I]]></content>
       <categories>
         <category>Markdown语法</category>
@@ -14,7 +14,7 @@
   </entry>
   <entry>
     <title><![CDATA[hexo+github]]></title>
-    <url>AngelNH_333%2Fhexo-github.html</url>
+    <url>%2FAngelNH_333%2Fhexo-github.html</url>
     <content type="text"><![CDATA[博客搭建(自己总结)之前自己搭建博客，可以说废了很大的劲，这里总结了一下各位大佬们搭建博客的方法，供大家借鉴。 1.安装所需软件1.git安装Windows系统下安装git 可以直接到官网下载安装点击这里 由于访问的是外网，下载速度可能会慢（也可能非常慢） 下面提供百度云的下载地址 64-bit Git for Windows Setup : https://npm.taobao.org/mirrors/git-for-windows/v2.21.0.windows.1/Git-2.21.0-64-bit.exe 2.Node.js安装可以直接到官网下载安装点击这里 百度网盘资源： https://pan.baidu.com/s/1hKVcYfPorRX89hl7D4R1eA 提取码：wsti 下载完成后，安装时一定要点击 Add to PATH 安装完成后，打开cmd，输入 node -v 测试安装是否成功 下面来解决npm卡顿问题 1.打开cmd，换成阿里源 11.npm config set registry https://registry.npm.taobao.org 2.验证命令 12.npm config get registry //返回https://registry.npm.taobao.org，说明镜像配置成功 3.安装cnpm 13.npm install -g cnpm --registry=https://registry.npm.taobao.org 3.hexo安装打开git目录下的git-bash.exe，输入下面代码 npm install -g hexo-cli 安装hexo完成后执行下列命令 123hexo init &lt;文件夹名&gt; cd &lt;文件夹名&gt;npm install hexo 理论上安装在git文件夹下 4.在github上注册账号并同时建立仓库gitHub是一个面向开源及私有软件项目的托管平台，因为只支持git 作为唯一的版本库格式进行托管，故名gitHub。（来源百度百科） github官网点击这里 这个是github基础设置和使用详解点击这里 5.ssh授权获取私钥先配置SSH,在git-bash下输入 12git config --global user.name &quot;github注册名&quot;git config --global user.email &quot;github注册邮箱&quot; 打开git bash，输入ssh-kengen -t rsa，停顿时，敲击回车 最后会在C盘目录下生成id_ras和id_rsa.pub两个文件夹，用记事本打开id_rsa.pub，复制打开的文件内容到 github-&gt;setting-&gt;SSH and GPG key 下 添加后，在git-bash进行测试，输入 ssh -T git@github.com 如果返回Hi username ！You’ve successfully ……，说明配置成功 6.配置_config.yml打开你的hexo目录下的_config.yml文档（我用的是notepad++打开的） 修改最下面的deploy下的内容 12345type: gitrepository : //这里是你的仓库下，点击Clone ordownload（绿色的）点击Use SSH复制框框内的内容到这里。bransh：//这里是你的bransh名称，默认为master 下面来修改 url和 root 123url ：// 是你的github 分配的地址root：// 是你的仓库的名字 一定要注意每一项冒号后有一个英文空格 7.本地测试打开git bash进入博客的根目录（cd + 文件夹名） 输入 12345hexo cleanhexo ghexo s hexo s是开启本地预览服务，打开浏览器访问 http://localhost:4000 即可看到内容。 显示的主题是 hexo 默认的 hexo 操作指令点击这里 8.上传到github仓库首先先安装hexo拓展库，打开git bash输入 12npm install hexo-deployer-git --savenpm install 然后输入 1234hexo clean//清除缓存hexo g//生成静态文件hexo d/上传打开github分配的网站，就可以看到你的blog了 后记自己搭建博客可能不是一帆风顺的，可能遇到各种不同的错误，一定要耐得住性子，一步一步来搭建。 记得，一定要善用搜索，遇到不懂得问题去百度上搜索。 最后，度娘，可真帅哪！！！]]></content>
       <categories>
         <category>hexo+github</category>
@@ -25,7 +25,7 @@
   </entry>
   <entry>
     <title><![CDATA[Hello world]]></title>
-    <url>AngelNH_333%2FHelloworld.html</url>
+    <url>%2FAngelNH_333%2FHelloworld.html</url>
     <content type="text"><![CDATA[Hello world记一次过程经历​ 最近，自己在搭一个博客，用 hexo+github，一开始按照网上的教程下载相应的软件，cmd安装，git bash 安装hexo，最开始可是在自己的本地可以预览，效果不错，直接就上传到github上的我的repo，结果cmd出错，由于对hexo 文件的位置不清，和出现的错误，我直接就删除了hexo，但是不是直接的卸载，有些文件还在（找不到啊 呜呜~），我用重新npm安装，发现还是不行，当时头大到想要格式化电脑了（还好没有，要不然就要重新慢慢下载了），然后我去找baidu，简书，发现自己的许多错误操作。好吧，我又从新开始。还是有error，我就按个所错误，发现自己有许多的本地配置没有设置，我就一条一条的修改（可气人了，一步踩一个坑，一步填一个坑），花了两天才把本地配置好（上课没时间啊）。 ​ 又因为，默认的主题很low（只是个人而言），不怎么喜欢，想换个主题，hexo上面有好多的主题，一个一个翻看，也没有喜欢的，现在比较流行的是NEXT主题（没错我找了度娘），就在网上下载NEXT主题包，一开始的主题内容，没设计的，所以我又找了度娘，还在CSDN上搜搜，发现许多大佬掉了许多的坑，也有填坑的方法(坑和经验，傻傻分不清），就开始一步一步自己搭，终于，经过一天多的自己的骚操作，在清明节的下午本地可以看到比较好的主题设置（还有点不满意，后续会修改）。 感受​ （真是不作死不会死，谁TM知道我为什么突然想到建博客呢！） ​ 经过三天多自己的摸索，我这个小小白终于把自己的blog建成了（~~热烈欢迎大家访问）。在建博客的过程中，真是有点头大了，因为自己对命令行操作一点不了解，完全是两眼一模黑，在黑暗中摸索（哈哈，有点夸张），出现错误也不知道哪里的问题，真的很感谢度娘的帮助（说白了，多谢大佬们的坑啊）。 ​ 这篇文章的标题是printf(“Hello,world”),学C语言的都知道这是入门的基础程序，我想用这个标题想说，当你去接触一个陌生不懂的东西时，不是一帆风顺的，总会有大波小浪，不过，经过自己的一步一步的摸索总会找到自己的___（你懂的哈），不管如何都不要放弃，既然已经迈开了重要的第一步，就要坚持走到终点。 ​ 对了，还有还有，“生命在于运动，电脑在于折腾啊”，不管会不会，先折腾折腾吧（坏了我可不管~~) ​ . ​ . ​ . ​ . ​ . ​ . ​ . ​ . ​ 度娘，真帅！！！]]></content>
       <categories>
         <category>life</category>
@@ -36,7 +36,7 @@
   </entry>
   <entry>
     <title><![CDATA[Hello World]]></title>
-    <url>AngelNH_333%2Fhello-world.html</url>
+    <url>%2FAngelNH_333%2Fhello-world.html</url>
     <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment]]></content>
       <tags>
         <tag>life</tag>
