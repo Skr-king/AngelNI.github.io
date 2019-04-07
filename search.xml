@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title></title>
+    <url>%2FAngelNH_333%2Fgoogleaf6c0bcacf38c39b.html</url>
+    <content type="text"><![CDATA[google-site-verification googleaf6c0bcacf38c39b.html]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[Markdown语法]]></title>
     <url>%2FAngelNH_333%2FMarkdown%E8%AF%AD%E6%B3%95.html</url>
     <content type="text"><![CDATA[Markdown 语法最近经过几天的奋斗，自己的博客基本框架终于搭建成功，接下来就是开始写文章了，不过上来就碰上个头疼的问题，就是怎么写的问题，我就想度娘请教（度娘，真帅），说是用Markdown语法写，最近在Notebook上写Python的学习笔记，老师说过要自学Markdown语法，说是非常简单（没错，就是很简单），下面就是Markdown的语法介绍啦，要好好学哟。 在编写 Markdown 时，强烈的推荐给大家一款简洁易用的 Markdown 编辑器 —— Typora 按照官方的说法就是 简单而强大，它不仅支持原生的语法，也支持对应的快捷键，更重要的是它还可以 实时预览 这里附上 Typora 的下载地址：点击这里 , 有兴趣的朋友可以下载来试试 好，下面开始进入正题，介绍一些常用的 Markdown 语法 (1) 标题Markdown语法：1234567891011#一级标题``##二级标题``###三级标题``####四级标题``#####五级标题``######六级标题 Typora快捷键：1234567891011Ctrl + 1：一级标题Ctrl + 2：二级标题Ctrl + 3：三级标题Ctrl + 4：四级标题Ctrl + 5：五级标题Ctrl + 6：六级标题 (2)粗体、斜体、删除线Markdown语法：1234567*斜体*``**粗体**``***加粗斜线***``~~删除线~~ Typora快捷键：1234567Ctrl+l ：斜体Ctrl+B：粗体Ctrl+U：下划线Alt + Shift + 5 ：删除线 (3) 引用块Markdown语法：&gt; 文字引用 Typora快捷键：1Ctrl + Shift + Q (4)代码块Markdown语法：&#39; 行内代码&#39; &#39;&#39;&#39; 多行代码&#39;&#39;&#39; Typora快捷键：123行内代码： Ctrl + Shift + `多行代码：Ctrl + Shift +K (5)公式块Markdown语法：1$$数学公式$$ Typora快捷键：1Ctrl + Shift + M (6)分割线Markdown 语法：12345方法1：---``方法2：+++``方法3：*** (7)列表Markdown语法：1.有序列表项 2. * 无序列表项 3. + 无序列表项 4. - 无序列表项 Typora快捷键：有序列表项：Ctrl+Shift+[ 有序列表项：Ctrl+Shift+] (8) 表格Markdown语法：1. 表头1|表头2 -|-|- 内容11|内容12 内容21|内容22 Typora 快捷键：Ctrl+T (9)超链接Markdown语法：方法一：[链接文字](链接地址 &quot;链接描述&quot;) 例如：[示例链接](https://www.example.com/ &quot;示例链接&quot;) 方法二：&lt;链接地址&gt; 例如：&lt;https://www.example.com/&gt; Typora快捷键：Ctrl+K (10)图片Markdown语法：![图片文字](图片地址 &quot;图片描述&quot;) 例如：![示例图片](https://www.example.com/example.PNG &quot;示例图片&quot;) Typora快捷键：Ctrl+Shift+I]]></content>
