@@ -114,7 +114,7 @@
 <meta property="og:description" content="天生棋局（指针）上次用数组写的天生棋局题，这里补上指针版的。">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://angelni.github.io/天生棋局-指针/1.png">
-<meta property="og:updated_time" content="2019-04-25T14:49:45.467Z">
+<meta property="og:updated_time" content="2019-05-02T04:12:45.913Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="天生棋局(指针)">
 <meta name="twitter:description" content="天生棋局（指针）上次用数组写的天生棋局题，这里补上指针版的。">
@@ -317,6 +317,23 @@
         
         
           
+          <li class="menu-item menu-item-photos">
+
+    
+    
+    
+      
+    
+
+    
+
+    <a href="/AngelNI.github.io/photos" rel="section"><i class="menu-item-icon fa fa-fw fa-image"></i> <br>Photos</a>
+
+  </li>
+        
+        
+        
+          
           <li class="menu-item menu-item-sitemap">
 
     
@@ -451,12 +468,24 @@
                 
               
 
-              <time title="Created: 2019-04-25 22:20:45 / Modified: 22:49:45" itemprop="dateCreated datePublished" datetime="2019-04-25T22:20:45+08:00">2019-04-25</time>
+              <time title="Created: 2019-04-25 22:20:45" itemprop="dateCreated datePublished" datetime="2019-04-25T22:20:45+08:00">2019-04-25</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">Edited on</span>
+                
+                <time title="Modified: 2019-05-02 12:12:45" itemprop="dateModified" datetime="2019-05-02T12:12:45+08:00">2019-05-02</time>
               
             
           </span>
@@ -529,6 +558,7 @@
 
       
         <h1 id="天生棋局（指针）"><a href="#天生棋局（指针）" class="headerlink" title="天生棋局（指针）"></a>天生棋局（指针）</h1><p>上次用数组写的天生棋局题，这里补上指针版的。</p>
+<p><img src="/天生棋局-指针/1.png" alt="天生棋局/1.png"></p>
 <a id="more"></a>
 <h2 id="题目描述"><a href="#题目描述" class="headerlink" title="题目描述"></a>题目描述</h2><p><strong>中国传统文化源远流长，博大精深，包含着华夏先哲的无穷智慧，也是历朝历代炎黄子孙生活的缩影。围棋作为中华民族流传已久的一种策略性棋牌游戏，蕴含着丰富的汉民族文化内涵，是中国文明与中华文化的体现。本案例要求创建一个棋盘，在棋盘生成的同时初始化棋盘，根据初始化后棋盘中棋子的位置来判断此时的棋局是否是一局好棋。具体要求如下：**</strong></p>
 <p><strong>1）棋盘的大小根据用户的指令确定；</strong></p>
@@ -539,7 +569,6 @@
 <p>附上关键自定义生成动态存储函数</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"> int ** board(int n)</span><br><span class="line">&#123;</span><br><span class="line">	int ** p = (int **)calloc(sizeof(int*), n);//calloc在内存中分配n*size大小的动态存储空间，返回一个起始地址的一个指针 </span><br><span class="line">	for (int i = 0; i &lt; n; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		p[i] = (int *)calloc(sizeof(int), n);</span><br><span class="line">	&#125;</span><br><span class="line">	return p;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="代码实现"><a href="#代码实现" class="headerlink" title="代码实现"></a>代码实现</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br></pre></td><td class="code"><pre><span class="line">#include&lt;stdio.h&gt;</span><br><span class="line">#include&lt;stdlib.h&gt;</span><br><span class="line">#include&lt;time.h&gt;</span><br><span class="line">int ** board(int n);      //申请动态存储空间 </span><br><span class="line">void inkey(int **p,int n,int m);//用随机数下棋 </span><br><span class="line">void printboard(int **p,int n);//打印棋格 </span><br><span class="line">int check(int **p,int n);//检查好/坏棋 </span><br><span class="line">void freespace(int **p,int n);//释放动态空间 </span><br><span class="line">int main()</span><br><span class="line">&#123;</span><br><span class="line">	int n,m,con;</span><br><span class="line">	printf(&quot;请输入棋盘大小:\n&quot;);</span><br><span class="line">	scanf(&quot;%d&quot;,&amp;n);</span><br><span class="line">	printf(&quot;请输入棋子数量:\n&quot;);</span><br><span class="line">	scanf(&quot;%d&quot;,&amp;m);</span><br><span class="line">	int **p=board(n);</span><br><span class="line">	inkey( p ,n, m );</span><br><span class="line">	printboard(p,n);</span><br><span class="line">	con=check(p,n);</span><br><span class="line">	freespace(p,n);</span><br><span class="line">	if(con)</span><br><span class="line">		printf(&quot;好棋！&quot;);</span><br><span class="line">	else</span><br><span class="line">		printf(&quot;不是好棋！&quot;); </span><br><span class="line">	return 0;</span><br><span class="line">	</span><br><span class="line"> &#125; </span><br><span class="line"> int ** board(int n)</span><br><span class="line">&#123;</span><br><span class="line">	int ** p = (int **)calloc(sizeof(int*), n);//calloc在内存中分配n*size大小的动态存储空间，返回一个起始地址的一个指针 </span><br><span class="line">	for (int i = 0; i &lt; n; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		p[i] = (int *)calloc(sizeof(int), n);</span><br><span class="line">	&#125;</span><br><span class="line">	return p;</span><br><span class="line">&#125;</span><br><span class="line">void inkey(int **p,int n,int m)</span><br><span class="line">&#123;</span><br><span class="line">	srand((unsigned int)time(NULL));  //随机数种子   生成伪随机数，每次的随机数都不一样 </span><br><span class="line">	while(m--)</span><br><span class="line">	&#123;</span><br><span class="line">		int a=rand()%n,b=rand()%n;</span><br><span class="line">		p[a][b]=1;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br><span class="line">void printboard(int **p,int n)</span><br><span class="line">&#123;</span><br><span class="line">	for(int i=0;i&lt;n;i++)				//  生  成  棋  盘 </span><br><span class="line">	&#123;</span><br><span class="line">		for(int j =0;j&lt;n;j++)        //   ┏ ┓┗ ┛┠ ┷ ┨ ┯ ┼ ●</span><br><span class="line">			&#123;</span><br><span class="line">				if(p[i][j]==1)</span><br><span class="line">					printf(&quot;●&quot;);</span><br><span class="line">				else</span><br><span class="line">				&#123;</span><br><span class="line">					if (i == 0 &amp;&amp; j == 0)    </span><br><span class="line">						printf(&quot;┏&quot;);</span><br><span class="line">					else if (i == 0 &amp;&amp; j == n - 1)</span><br><span class="line">						printf(&quot;┓&quot;);</span><br><span class="line">					else if (i == n - 1 &amp;&amp; j == 0)</span><br><span class="line">						printf(&quot;┗&quot;);</span><br><span class="line">					else if (i == n - 1 &amp;&amp; j == n - 1)</span><br><span class="line">						printf(&quot;┛&quot;);</span><br><span class="line">					else if (j == 0)</span><br><span class="line">						printf(&quot;┠&quot;);</span><br><span class="line">					else if (i == n - 1)</span><br><span class="line">						printf(&quot;┷&quot;);</span><br><span class="line">					else if (j == n - 1)</span><br><span class="line">						printf(&quot;┨&quot;);</span><br><span class="line">					else if (i == 0)</span><br><span class="line">						printf(&quot;┯&quot;);</span><br><span class="line">					else</span><br><span class="line">						printf(&quot;┼&quot;);</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;</span><br><span class="line">			putchar(&apos;\n&apos;);</span><br><span class="line">		&#125; </span><br><span class="line">&#125;</span><br><span class="line">int check(int **p,int n)</span><br><span class="line">&#123;</span><br><span class="line">	int flag = 0;    //   默认不是好棋。 </span><br><span class="line">	for(int i=0;i&lt;n;i++)						// 判断 好棋 坏棋 </span><br><span class="line">	&#123;</span><br><span class="line">		for(int j=0;j&lt;n;j++)</span><br><span class="line">		&#123;</span><br><span class="line">			if (p[i][j] == 1)</span><br><span class="line">			&#123;</span><br><span class="line">				if (j&gt;0 &amp;&amp; p[i][j-1] == 1)		//判断同一行有无相邻棋子</span><br><span class="line">				&#123;</span><br><span class="line">					flag = 1; 	</span><br><span class="line">				&#125;</span><br><span class="line">				if (i &gt;0 &amp;&amp; p[i-1][j] == 1)	//判断同一列有无相邻棋子</span><br><span class="line">				&#123;</span><br><span class="line">					flag = 1;</span><br><span class="line">				&#125;</span><br><span class="line">			&#125;	</span><br><span class="line">		&#125; </span><br><span class="line">	&#125;</span><br><span class="line">	return flag;</span><br><span class="line">&#125;</span><br><span class="line">void freespace(int **p,int n)</span><br><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">	for (int i= 0; i &lt; n; i++)</span><br><span class="line">	&#123;</span><br><span class="line">		free(p[i]);						//释放一级指针指向的空间</span><br><span class="line">	&#125;</span><br><span class="line">	free(p);							//释放二级指针指向的空间</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p><img src="/天生棋局-指针/1.png" alt="天生棋局/1.png"></p>
 
       
     </div>
@@ -844,7 +873,7 @@
             <div class="links-of-blogroll motion-element links-of-blogroll-inline">
               <div class="links-of-blogroll-title">
                 <i class="fa  fa-fw fa-link"></i>
-                传送门
+                传送门(Link)
               </div>
               <ul class="links-of-blogroll-list">
                 
@@ -853,7 +882,7 @@
                   </li>
                 
                   <li class="links-of-blogroll-item">
-                    <a href="https://baidu.com/" title="https://baidu.com/" rel="noopener" target="_blank">度娘</a>
+                    <a href="https://baidu.com/" title="https://baidu.com/" rel="noopener" target="_blank">baidu</a>
                   </li>
                 
                   <li class="links-of-blogroll-item">
