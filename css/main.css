@@ -1883,7 +1883,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #61062e;
+  background: #ffff6f;
 }
 .feed-link,
 .chat {
@@ -2500,7 +2500,7 @@ ul.breadcrumb li+li:last-child {
   overflow: hidden;
   padding: 0;
   width: 240px;
-  background: rgba(255,255,255,0.7);
+  background: rgba(255,255,255,0.8);
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
   border-radius: initial;
 }
@@ -2534,7 +2534,7 @@ ul.breadcrumb li+li:last-child {
   box-sizing: border-box;
   padding: 40px;
   width: calc(100% - 252px);
-  background: rgba(255,255,255,0.5);
+  background: #fff;
   min-height: 700px;
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
   border-radius: initial;
@@ -2559,7 +2559,7 @@ ul.breadcrumb li+li:last-child {
   float: left;
   margin-left: -100%;
   width: 240px;
-  background: rgba(255,255,255,0.7);
+  background: rgba(255,255,255,0.8);
   box-shadow: none;
 }
 @media (max-width: 991px) {
@@ -2903,7 +2903,7 @@ ul.breadcrumb li+li:last-child {
 }
 .post-block {
   padding: 40px;
-  background: #fff;
+  background: rgba(255,255,255,0.8);
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
   border-radius: initial;
 }
@@ -2916,7 +2916,7 @@ ul.breadcrumb li+li:last-child {
   padding: 40px;
   margin: auto;
   margin-top: 12px;
-  background: #fff;
+  background: rgba(255,255,255,0.8);
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
   border-radius: initial;
 }
@@ -2935,7 +2935,7 @@ ul.breadcrumb li+li:last-child {
 .pagination {
   margin: 12px 0 0;
   border-top: initial;
-  background: #fff;
+  background: rgba(255,255,255,0.8);
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
   border-radius: initial;
   padding: 10px 0 10px;
