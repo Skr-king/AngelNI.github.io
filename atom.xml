@@ -66,6 +66,30 @@
   </entry>
   
   <entry>
+    <title>HTML学习</title>
+    <link href="https://angelni.github.io/HTML%E5%AD%A6%E4%B9%A0.html"/>
+    <id>https://angelni.github.io/HTML学习.html</id>
+    <published>2019-05-01T09:33:59.000Z</published>
+    <updated>2019-05-02T12:42:11.287Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="HTNL——Begin"><a href="#HTNL——Begin" class="headerlink" title="HTNL——Begin"></a>HTNL——Begin</h1><p>Hyper Text Markup Language ，short for HTML ,is a standard markup language for creating web pages.The web pages which we usually scan are written by it.I want to learn a fewer about it because of writing blog and modifying my blog’s framework.</p><p>I need it.</p><p><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1556808682080&di=1faa55d20d458738c6537913a107772b&imgtype=0&src=http%3A%2F%2Fa2.att.hudong.com%2F13%2F86%2F01300000165488122499865118637.jpg" width="80%"></p><a id="more"></a><h3 id="The-simply-example"><a href="#The-simply-example" class="headerlink" title="The simply example"></a>The simply example</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">&lt;head&gt;</span><br><span class="line">&lt;meta charset=&quot;utf-8&quot;&gt;</span><br><span class="line">&lt;title&gt;this is a title&lt;/title&gt;</span><br><span class="line">&lt;/head&gt;</span><br><span class="line">&lt;body&gt;</span><br><span class="line">&lt;h1&gt;First level title&lt;/h1&gt;</span><br><span class="line">&lt;p&gt;paragraph&lt;/p&gt;</span><br><span class="line">&lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure><p><strong>explanation</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html&gt;  声明HTML5文档</span><br><span class="line">&lt;html&gt;元素是HTML页面的根元素</span><br><span class="line">&lt;head&gt;元素包含了文档的元数据</span><br><span class="line">&lt;title&gt;文档的标题</span><br><span class="line">&lt;body&gt;可见的页面内容</span><br><span class="line">&lt;h1&gt;一级标题</span><br><span class="line">&lt;p&gt;段落</span><br><span class="line">&lt;meta charset = &quot;utf-8&quot;&gt;声明编码utf-8</span><br></pre></td></tr></table></figure><h3 id="Others"><a href="#Others" class="headerlink" title="Others"></a>Others</h3><h5 id="1-HTML-link"><a href="#1-HTML-link" class="headerlink" title="1.HTML link"></a>1.HTML link</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;a href=&quot;http://baidu.com&quot;&gt;This is baidu link&lt;/a&gt;</span><br></pre></td></tr></table></figure><h5 id="2-picture"><a href="#2-picture" class="headerlink" title="2.picture"></a>2.picture</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;imag scr=&quot;(url)&quot; width=&quot;258&quot; height=&quot;39&quot; /&gt;</span><br></pre></td></tr></table></figure><h5 id="3-lind-feed"><a href="#3-lind-feed" class="headerlink" title="3.lind feed"></a>3.lind feed</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;br/&gt;</span><br></pre></td></tr></table></figure><h5 id="4-level"><a href="#4-level" class="headerlink" title="4.level"></a>4.level</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;hr&gt;</span><br></pre></td></tr></table></figure><h5 id="5-notes"><a href="#5-notes" class="headerlink" title="5.notes"></a>5.notes</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;!--notes--&gt;</span><br></pre></td></tr></table></figure><h5 id="6-bold"><a href="#6-bold" class="headerlink" title="6.bold"></a>6.bold</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;b&gt; bold &lt;/b&gt;</span><br></pre></td></tr></table></figure><p>I simply learned basics of HTML.Maybe it is very simply ,but it’s a new stduy.Come on  !!!</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;HTNL——Begin&quot;&gt;&lt;a href=&quot;#HTNL——Begin&quot; class=&quot;headerlink&quot; title=&quot;HTNL——Begin&quot;&gt;&lt;/a&gt;HTNL——Begin&lt;/h1&gt;&lt;p&gt;Hyper Text Markup Language ，short for HTML ,is a standard markup language for creating web pages.The web pages which we usually scan are written by it.I want to learn a fewer about it because of writing blog and modifying my blog’s framework.&lt;/p&gt;
+&lt;p&gt;I need it.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1556808682080&amp;di=1faa55d20d458738c6537913a107772b&amp;imgtype=0&amp;src=http%3A%2F%2Fa2.att.hudong.com%2F13%2F86%2F01300000165488122499865118637.jpg&quot; width=&quot;80%&quot;&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="HTML" scheme="https://angelni.github.io/categories/HTML/"/>
+    
+    
+      <category term="HTML" scheme="https://angelni.github.io/tags/HTML/"/>
+    
+  </entry>
+  
+  <entry>
     <title>天生棋局(指针)</title>
     <link href="https://angelni.github.io/%E5%A4%A9%E7%94%9F%E6%A3%8B%E5%B1%80-%E6%8C%87%E9%92%88.html"/>
     <id>https://angelni.github.io/天生棋局-指针.html</id>
@@ -204,24 +228,6 @@
       <category term="life" scheme="https://angelni.github.io/tags/life/"/>
     
       <category term="文学" scheme="https://angelni.github.io/tags/%E6%96%87%E5%AD%A6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>HTML学习</title>
-    <link href="https://angelni.github.io/HTML%E5%AD%A6%E4%B9%A0.html"/>
-    <id>https://angelni.github.io/HTML学习.html</id>
-    <published>2019-04-14T09:33:59.000Z</published>
-    <updated>2019-04-18T13:25:02.815Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-      <category term="HTML" scheme="https://angelni.github.io/categories/HTML/"/>
-    
-    
-      <category term="HTML" scheme="https://angelni.github.io/tags/HTML/"/>
     
   </entry>
   
