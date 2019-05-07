@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Python_Operation on Excel]]></title>
+    <url>%2FAngelNI.github.io%2FPython-Operation-on-Excel.html</url>
+    <content type="text"><![CDATA[Python–operation on Excel====This my mood now==== I recently solve the problem of Excel ‘ data , it is hard to process Excel data because of huge amount of it.However, there is a better tool to process–Python.I simply write 34 lines to operation on Excel’s data to count th number of the key word. Just for recording. code1234567891011121314151617181920212223242526272829303132333435import xlrdimport xlwtimport reimport numpy as npimport pandas as pd#import openpyxldata = xlrd.open_workbook(&apos;C:\\Users\\hp\\Desktop\\数据信息3.xlsx&apos;)table = data.sheets()[0]ncols = table.col_values(12)a = len(ncols)pattern = re.compile(r&apos;\d+&apos;)d=[]for i in range(1,a): #print(pattern.findall(ncols[i])) # print(&quot;\n&quot;) b = len(pattern.findall(ncols[i])) c=[] for j in range(0,b): if eval(pattern.findall(ncols[i])[j] )&lt; 10 : c.append(pattern.findall(ncols[i])[j]) #print(c) d.append(len(c)) #print(d) f = xlwt.Workbook() #创建工作簿sheet1 = f.add_sheet(u&apos;sheet1&apos;,cell_overwrite_ok=True) #创建sheetfor i in range(0,len(d)): sheet1.write(i+1,0,d[i])f.save(&quot;C:\\Users\\hp\\Desktop\\2.xls&quot;)print(&quot;结束&quot;)]]></content>
+      <categories>
+        <category>python学习</category>
+      </categories>
+      <tags>
+        <tag>python学习</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[A New Start]]></title>
     <url>%2FAngelNI.github.io%2FA-New-Start.html</url>
     <content type="text"><![CDATA[A New StartThis is a nice day!!! After half a day’s hard work, my blog is successfully included by baidu and google,and I add some new features to my blog for attracting more people to visit. As we all know,photo is a good way to look back our experience,so I specially add Photo to my blog.I change the background of my blog,making it not monotonous.The big change is that my blog language is changed to Engelish and I begin to write blog in English ,thanks to my classmate Uncle_drew’s idea,and thanks for his blog ,I learn a lot from it. Thank you @ https://cndrew.cn/ Lastly,I sincerely hope that I can insist writing blog .]]></content>
@@ -74,8 +85,8 @@
         <category>C++/C</category>
       </categories>
       <tags>
-        <tag>C++/C</tag>
         <tag>算法</tag>
+        <tag>C++/C</tag>
       </tags>
   </entry>
   <entry>
