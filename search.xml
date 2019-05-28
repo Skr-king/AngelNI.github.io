@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Fermat's Last Theorem]]></title>
+    <url>%2FAngelNI.github.io%2FFermat-s-Last-Theorem.html</url>
+    <content type="text"><![CDATA[Fermat’s Last Theorem QuestionDescription 对于输入的n,判断这个一个三元方程xn+yn=znx^n+y^n=z^nx**n+y**n=z**n是否有整数解 Input 单组输入 第一行一个整数TTT,代表输入的数据个数 接下来T行，每行一个正整数n。 1≤T≤100 1≤n≤100000 Output 输出T行，对于每个输入的n,如果有整数解输出”YES”,否则输出”NO”. Analyse费马大定理，又被称为“费马最后的定理”，由17世纪法国数学家皮耶·德·费玛提出。 他断言当整数n &gt;2时，关于x, y, z的方程 x^n + y^n = z^n 没有正整数解。 费马达定理的证明有一个非常巧妙的方法证明，自己去领悟精髓吧。 code#include&lt;bits/stdc++.h&gt; using namespace std; const int N = 1e6+100; typedef long long ll; int main() { int n,t; cin&gt;&gt;t; for(int i=1;i&lt;=t;i++) { cin&gt;&gt;n; if(n&lt;=2) cout&lt;&lt;&quot;YES&quot;&lt;&lt;endl; else cout&lt;&lt;&quot;NO&quot;&lt;&lt;endl; } return 0; }]]></content>
+      <categories>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Python_Operation on Excel]]></title>
     <url>%2FAngelNI.github.io%2FPython-Operation-on-Excel.html</url>
     <content type="text"><![CDATA[Python–operation on Excel====This my mood now==== I recently solve the problem of Excel ‘ data , it is hard to process Excel data because of huge amount of it.However, there is a better tool to process–Python.I simply write 34 lines to operation on Excel’s data to count th number of the key word. Just for recording. code1234567891011121314151617181920212223242526272829303132333435import xlrdimport xlwtimport reimport numpy as npimport pandas as pd#import openpyxldata = xlrd.open_workbook(&apos;C:\\Users\\hp\\Desktop\\数据信息3.xlsx&apos;)table = data.sheets()[0]ncols = table.col_values(12)a = len(ncols)pattern = re.compile(r&apos;\d+&apos;)d=[]for i in range(1,a): #print(pattern.findall(ncols[i])) # print(&quot;\n&quot;) b = len(pattern.findall(ncols[i])) c=[] for j in range(0,b): if eval(pattern.findall(ncols[i])[j] )&lt; 10 : c.append(pattern.findall(ncols[i])[j]) #print(c) d.append(len(c)) #print(d) f = xlwt.Workbook() #创建工作簿sheet1 = f.add_sheet(u&apos;sheet1&apos;,cell_overwrite_ok=True) #创建sheetfor i in range(0,len(d)): sheet1.write(i+1,0,d[i])f.save(&quot;C:\\Users\\hp\\Desktop\\2.xls&quot;)print(&quot;结束&quot;)]]></content>
