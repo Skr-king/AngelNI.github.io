@@ -6,7 +6,7 @@
   <link href="/AngelNI.github.io/atom.xml" rel="self"/>
   
   <link href="https://angelni.github.io/"/>
-  <updated>2019-05-28T13:49:33.743Z</updated>
+  <updated>2019-05-30T12:10:28.063Z</updated>
   <id>https://angelni.github.io/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Fleury 算法</title>
+    <link href="https://angelni.github.io/Fleury-%E7%AE%97%E6%B3%95.html"/>
+    <id>https://angelni.github.io/Fleury-算法.html</id>
+    <published>2019-05-30T11:32:09.000Z</published>
+    <updated>2019-05-30T12:10:28.063Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Fleury-算法"><a href="#Fleury-算法" class="headerlink" title="Fleury 算法"></a>Fleury 算法</h1><p>Fleury算法是从离散书上看到的，书上详细的写了算法的操作。在这里用主要用C语言实现。在这里隆重感谢曹老板的鼎力支持。膜拜~</p><p><img src="/Fleury-算法/3.jpg" alt><a id="more"></a></p><h2 id="伪代码"><a href="#伪代码" class="headerlink" title="伪代码"></a>伪代码</h2><p>输入 ：欧拉图</p><ol><li><p><code>任取 v0∈V(G),令P0 = v0 ，i = 0.</code></p></li><li><p><code>设  Pi = v0e0v1e1……eivi,</code></p></li></ol><p><code>如果E（G） - {e1,e2……ei}中没有与vi关联的边则计算停止；否则按下述条件从E（G） -{e1，e2，……ei}中任取一条边ei+1：</code></p><p>​    <code>（a） ei+1与vi相关联；</code></p><p>​    <code>（b） 除非无别的边可提供，否则ei+1不应该为Gi = G-{e1，e2，……ei}中的桥。</code></p><p>​        <code>设ei+1=（vi,vi+1）,把ei+1,vi+1加入pi得到pi+1.</code></p><ol start="3"><li><code>令i=i+1，返回2.</code></li></ol><h2 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h2><p>#include&lt;stdio.h&gt;<br>void fleury ();<br>int Bridge (int m, int k);<br>int eulertu[10000][10000] = 0;<br>int V,E;<br>int main ()<br>{<br>    printf(“顶点数：”);<br>    scanf(“%d”,&amp;V);<br>    printf(“边数：”);<br>    scanf(“%d”,&amp;E);                 //输入几个点，几条边<br>    int i,j;<br>    int m,n;<br>    int count;<br>    int o=1;<br>    printf(“输入有边的俩个点:\n”);<br>    for (i = 0; i &lt; E; i++)<br>    {</p><pre><code>    scanf(&quot;%d %d&quot;,&amp;m,&amp;n);       //输入有边的俩个点     eulertu[m][n] = eulertu[n][m] = 1;  }for (i = 0; i &lt; V; i++)         //判断是否为欧拉图 {    count = 0;    for (j = 0; j &lt; V; j++)     {        if (eulertu[i][j]==1)             count++;    }    if (count%2!=0)    {        printf(&quot;不是欧拉图&quot;);        o=0;        break;    }    if(o==0)        break;        }if(o==1){     fleury();    printf(&quot;end&quot;);} return 0;</code></pre><p>}</p><p>void fleury ()<br>{<br>    int a[10000] ={0};<br>    int i,j;<br>    int k = 0;<br>    int bridge = 1;<br>    int t;<br>    printf(“%d—&gt;”,a[0]);<br>    for (i = 0; i &lt; E; i++)<br>    {<br>        for (j = 0; j &lt; V; j++)<br>        {<br>            if(eulertu[a[k]][j]==1)<br>            {<br>                eulertu[a[k]][j] = eulertu[j][a[k]] = 0;<br>                if(Bridge(a[k],j))<br>                {<br>                    t = j;<br>                    eulertu[a[k]][j] = eulertu[j][a[k]] = 1;<br>                }<br>                else<br>                {<br>                    k++;<br>                    a[k] = j;<br>                    printf(“%d—&gt;”,j);<br>                    bridge = 0;<br>                    break;<br>                }</p><pre><code>        }    }    if (bridge)     {        eulertu[a[k]][t] = eulertu[t][a[k]] = 0;        k++;        a[k] = t;        printf(&quot;%d---&gt;&quot;,t);    }    bridge = 1;}</code></pre><p>}</p><p>int Bridge (int m, int k)<br>{<br>    int a[10000];<br>    int i = 0;<br>    int t = 0;<br>    int n = 0;<br>    int p = 0;<br>    for(i=0;i&lt;10000;i++)<br>        a[i]=-1;<br>    a[t] = m;<br>    for (t = 0; a[t] != -1; t++ )<br>    {<br>        for (i = 0; i &lt; V; i++)<br>        {<br>            if (eulertu[a[t]][i] == 1 &amp;&amp; i == k)<br>                return 0;<br>            if (eulertu[a[t]][i] == 1)<br>            {</p><pre><code>            p=0;            while(a[p]==-1)            {                p++;                n++;                a[n] = i;            }            }    }}return 1;</code></pre><p>}</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;Fleury-算法&quot;&gt;&lt;a href=&quot;#Fleury-算法&quot; class=&quot;headerlink&quot; title=&quot;Fleury 算法&quot;&gt;&lt;/a&gt;Fleury 算法&lt;/h1&gt;&lt;p&gt;Fleury算法是从离散书上看到的，书上详细的写了算法的操作。在这里用主要用C语言实现。在这里隆重感谢曹老板的鼎力支持。膜拜~&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/Fleury-算法/3.jpg&quot; alt&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="算法" scheme="https://angelni.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    
+    
+      <category term="算法" scheme="https://angelni.github.io/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
   
   <entry>
     <title>Fermat&#39;s Last Theorem</title>
