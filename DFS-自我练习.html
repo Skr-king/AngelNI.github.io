@@ -109,18 +109,20 @@
 
 
 
-  <meta name="description" content="This is a simple record of learning bits and pieces, so that each step of learning into an unforgettable memory.">
+  <meta name="description" content="DFS——exercise.I learned DFS last month,I almost forgot how to use it,so that I can’t solve a problem in a practice competition. So I require to review it,and review carefully!">
 <meta name="keywords" content="算法">
 <meta property="og:type" content="article">
 <meta property="og:title" content="DFS__自我练习">
 <meta property="og:url" content="https://angelni.github.io/DFS-自我练习.html">
 <meta property="og:site_name" content="Angel_Sky">
-<meta property="og:description" content="This is a simple record of learning bits and pieces, so that each step of learning into an unforgettable memory.">
+<meta property="og:description" content="DFS——exercise.I learned DFS last month,I almost forgot how to use it,so that I can’t solve a problem in a practice competition. So I require to review it,and review carefully!">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2019-05-31T04:34:24.933Z">
+<meta property="og:image" content="https://angelni.github.io/DFS-自我练习/1.JPG">
+<meta property="og:updated_time" content="2019-05-31T12:08:36.497Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="DFS__自我练习">
-<meta name="twitter:description" content="This is a simple record of learning bits and pieces, so that each step of learning into an unforgettable memory.">
+<meta name="twitter:description" content="DFS——exercise.I learned DFS last month,I almost forgot how to use it,so that I can’t solve a problem in a practice competition. So I require to review it,and review carefully!">
+<meta name="twitter:image" content="https://angelni.github.io/DFS-自我练习/1.JPG">
 
 
 
@@ -466,7 +468,7 @@
                 
               
 
-              <time title="Created: 2019-05-31 10:45:17 / Modified: 12:34:24" itemprop="dateCreated datePublished" datetime="2019-05-31T10:45:17+08:00">2019-05-31</time>
+              <time title="Created: 2019-05-31 10:45:17 / Modified: 20:08:36" itemprop="dateCreated datePublished" datetime="2019-05-31T10:45:17+08:00">2019-05-31</time>
             
 
             
@@ -543,7 +545,54 @@
       
 
       
-        
+        <h1 id="DFS——exercise"><a href="#DFS——exercise" class="headerlink" title="DFS——exercise."></a><center>DFS——exercise.<center></center></center></h1><p>I learned DFS last month,I almost forgot how to use it,so that I can’t solve a problem in a practice competition. So I require to review it,and review carefully!<a id="more"></a></p>
+<p><img src="/DFS-自我练习/1.JPG" alt></p>
+<h2 id="Question"><a href="#Question" class="headerlink" title="Question"></a>Question</h2><p>在这里你有一个 6*3 的一个数组，每行有1 ， 2 ， 3 三个数，并且每行按照六种顺序分别排列。当每一行都取一个数时，求出6个数之和最大的值。</p>
+<p>这里有一个非常笨的方法，就是用六重For循环，是不是很惊讶。没错，当我的小伙伴告诉我时,我的内心是WTF的。</p>
+<p>这不是重点，重点是想通过这个简单的题练习一下DFS的思想。</p>
+<p>这仅仅是个简单的开始，</p>
+<h2 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h2><pre><code>#include&lt;iostream&gt;
+using namespace std;
+int a[10][5];
+int res;
+void dfs(int x,int sum = 0)
+{
+    if(x&gt;5)
+    {
+        //printf(&quot;%d&quot;,res);
+        res = max(res,sum);
+        return; 
+    }
+    dfs(x+1,sum+a[x][0]);
+    //dfs(x+1,sum+a[x][1]);
+    //dfs(x+1,sum+a[x][2]);
+}
+int main（）
+{
+    for(int i=0;i&lt;6;i++)
+        for(int j =0;j&lt;3;j++)
+            cin&gt;&gt;a[i][j];
+    dfs(0);
+    cout&lt;&lt;res&lt;&lt;endl;
+    return 0;
+    }
+</code></pre><h6 id="FIRST"><a href="#FIRST" class="headerlink" title="FIRST"></a>FIRST</h6><p>第一次我控制只输入第一列，输出结果为六。</p>
+<p>仔细想想，这个跟递归求n的阶乘有异曲同工之妙，不断的调用自己递归，直到满足条件回归。</p>
+<h6 id="SECOND"><a href="#SECOND" class="headerlink" title="SECOND"></a>SECOND</h6><p>这次我输入了6*2的数据，并将每次的相加求和的结果打印出来，算了算一共64种，也就是说一共有64种组合方法。</p>
+<h6 id="THIRD"><a href="#THIRD" class="headerlink" title="THIRD"></a>THIRD</h6><p>最后我将所有的数据输入得到了正确的结果18。</p>
+<h6 id="LAST"><a href="#LAST" class="headerlink" title="LAST"></a>LAST</h6><p>仔细想想还是挺有趣的，想想那个yong FOR循环写的，一共729种可能，想想就可怕.    TE,TE,TE,TE…….</p>
+<h2 id="DFS模板介绍"><a href="#DFS模板介绍" class="headerlink" title="DFS模板介绍"></a>DFS模板介绍</h2><p>DFS问题的解决有一个dfs的套用模板，自我感觉挺有用的，如果你有更好的办法，留评论呦！！！</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">void dfs(step)`</span><br><span class="line">&#123;</span><br><span class="line">	if(num==end)</span><br><span class="line">	&#123;</span><br><span class="line">        /*do something*/</span><br><span class="line">        return ;&#125;</span><br><span class="line">      /*尝试每一种可能，和遍历数组差不多*/</span><br><span class="line">      for(int i =0;i&lt;end;i++)</span><br><span class="line">      &#123;</span><br><span class="line">			do something;</span><br><span class="line">			dfs(step+1);</span><br><span class="line">			undo something;</span><br><span class="line">			&#125;</span><br><span class="line">rerun 0;</span><br><span class="line">`&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="回溯问题"><a href="#回溯问题" class="headerlink" title="回溯问题"></a>回溯问题</h2><h4 id="Q"><a href="#Q" class="headerlink" title="Q"></a>Q</h4><p>这里拿棋盘问题举个栗子。</p>
+<p>POJ1321 <a href="http://poj.org/problem?id=1321" target="_blank" rel="noopener">请点击这里</a></p>
+<p>在一个给定形状的棋盘（形状可能是不规则的）上面摆放棋子，棋子没有区别。要求摆放时任意的两个棋子不能放在棋盘中的同一行或者同一列，请编程求解对于给定形状和大小的棋盘，摆放k个棋子的所有可行的摆放方案C。</p>
+<p><strong>INPUT</strong></p>
+<p>输入含有多组测试数据。<br>每组数据的第一行是两个正整数，n k，用一个空格隔开，表示了将在一个n*n的矩阵内描述棋盘，以及摆放棋子的数目。 n &lt;= 8 ,  k &lt;= n<br>当为-1 -1时表示输入结束。<br>随后的n行描述了棋盘的形状：每行有n个字符，其中 # 表示棋盘区域， . 表示空白区域（数据保证不出现多余的空白行或者空白列）。</p>
+<p><strong>OUTPUT</strong></p>
+<p>对于每一组数据，给出一行输出，输出摆放的方案数目C （数据保证C&lt;2^31）。</p>
+<h4 id="SOLVE"><a href="#SOLVE" class="headerlink" title="SOLVE"></a>SOLVE</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">int DFS(int x,int y)</span><br><span class="line"> &#123;</span><br><span class="line">    if(y&gt;=k）</span><br><span class="line">    &#123;</span><br><span class="line">         ans++;</span><br><span class="line">       return 0;</span><br><span class="line">    &#125;</span><br><span class="line">     for(int i=x;i&lt;n;i++)</span><br><span class="line">     &#123;</span><br><span class="line">       for(int j=0;j&lt;n;j++)</span><br><span class="line">        &#123;</span><br><span class="line">            if(!visit[j]&amp;&amp;mp[i][j]==&apos;#&apos;)//回溯</span><br><span class="line">             &#123;</span><br><span class="line">                 visit[j]=1;</span><br><span class="line">                 DFS(i+1,y+1);</span><br><span class="line">                visit[j]=0;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">     &#125;</span><br><span class="line">     return 0;</span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line">在这里menset（visit，0，sizeof（visit））；</span><br></pre></td></tr></table></figure>
+<p>那么DFS过程中，你要退一步，就必然需要保存你走过每个点的所有信息，而在退一步的过程中，你需要从当前状态回到之前的状态，那么这步操作就是回溯，回溯是递归的时候一定会产生的很自然的操作，只不过大部分情况下不需要回溯。</p>
+
       
     </div>
 
@@ -680,8 +729,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            Overview
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -882,6 +940,23 @@
       </div>
 
       
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#DFS——exercise"><span class="nav-number">1.</span> <span class="nav-text">DFS——exercise.</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#Question"><span class="nav-number">1.1.</span> <span class="nav-text">Question</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Code"><span class="nav-number">1.2.</span> <span class="nav-text">Code</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#FIRST"><span class="nav-number">1.2.0.0.0.1.</span> <span class="nav-text">FIRST</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#SECOND"><span class="nav-number">1.2.0.0.0.2.</span> <span class="nav-text">SECOND</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#THIRD"><span class="nav-number">1.2.0.0.0.3.</span> <span class="nav-text">THIRD</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#LAST"><span class="nav-number">1.2.0.0.0.4.</span> <span class="nav-text">LAST</span></a></li></ol></li></ol></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#DFS模板介绍"><span class="nav-number">1.3.</span> <span class="nav-text">DFS模板介绍</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#回溯问题"><span class="nav-number">1.4.</span> <span class="nav-text">回溯问题</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Q"><span class="nav-number">1.4.0.1.</span> <span class="nav-text">Q</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#SOLVE"><span class="nav-number">1.4.0.2.</span> <span class="nav-text">SOLVE</span></a></li></ol></li></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
+      
 
       
 
@@ -924,7 +999,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共11.9k字</span>
+  <span class="post-count">博客全站共12.8k字</span>
 </div>
         
 <div class="busuanzi-count">
