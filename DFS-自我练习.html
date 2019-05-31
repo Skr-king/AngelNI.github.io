@@ -118,7 +118,7 @@
 <meta property="og:description" content="DFS——exercise.I learned DFS last month,I almost forgot how to use it,so that I can’t solve a problem in a practice competition. So I require to review it,and review carefully!">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://angelni.github.io/DFS-自我练习/1.JPG">
-<meta property="og:updated_time" content="2019-05-31T12:08:36.497Z">
+<meta property="og:updated_time" content="2019-05-31T12:15:35.812Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="DFS__自我练习">
 <meta name="twitter:description" content="DFS——exercise.I learned DFS last month,I almost forgot how to use it,so that I can’t solve a problem in a practice competition. So I require to review it,and review carefully!">
@@ -468,7 +468,7 @@
                 
               
 
-              <time title="Created: 2019-05-31 10:45:17 / Modified: 20:08:36" itemprop="dateCreated datePublished" datetime="2019-05-31T10:45:17+08:00">2019-05-31</time>
+              <time title="Created: 2019-05-31 10:45:17 / Modified: 20:15:35" itemprop="dateCreated datePublished" datetime="2019-05-31T10:45:17+08:00">2019-05-31</time>
             
 
             
@@ -591,7 +591,7 @@ int main（）
 <p><strong>OUTPUT</strong></p>
 <p>对于每一组数据，给出一行输出，输出摆放的方案数目C （数据保证C&lt;2^31）。</p>
 <h4 id="SOLVE"><a href="#SOLVE" class="headerlink" title="SOLVE"></a>SOLVE</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">int DFS(int x,int y)</span><br><span class="line"> &#123;</span><br><span class="line">    if(y&gt;=k）</span><br><span class="line">    &#123;</span><br><span class="line">         ans++;</span><br><span class="line">       return 0;</span><br><span class="line">    &#125;</span><br><span class="line">     for(int i=x;i&lt;n;i++)</span><br><span class="line">     &#123;</span><br><span class="line">       for(int j=0;j&lt;n;j++)</span><br><span class="line">        &#123;</span><br><span class="line">            if(!visit[j]&amp;&amp;mp[i][j]==&apos;#&apos;)//回溯</span><br><span class="line">             &#123;</span><br><span class="line">                 visit[j]=1;</span><br><span class="line">                 DFS(i+1,y+1);</span><br><span class="line">                visit[j]=0;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">     &#125;</span><br><span class="line">     return 0;</span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line">在这里menset（visit，0，sizeof（visit））；</span><br></pre></td></tr></table></figure>
-<p>那么DFS过程中，你要退一步，就必然需要保存你走过每个点的所有信息，而在退一步的过程中，你需要从当前状态回到之前的状态，那么这步操作就是回溯，回溯是递归的时候一定会产生的很自然的操作，只不过大部分情况下不需要回溯。</p>
+<p>DFS过程中，你要退一步，就必然需要保存你走过每个点的所有信息，而在退一步的过程中，你需要从当前状态回到之前的状态，那么这步操作就是回溯，回溯是递归的时候一定会产生的很自然的操作，只不过大部分情况下不需要回溯。</p>
 
       
     </div>
