@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[DFS__自我练习]]></title>
+    <url>%2FAngelNI.github.io%2FDFS-%E8%87%AA%E6%88%91%E7%BB%83%E4%B9%A0.html</url>
+    <content type="text"></content>
+      <categories>
+        <category>算法</category>
+      </categories>
+      <tags>
+        <tag>算法</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[Fleury 算法]]></title>
     <url>%2FAngelNI.github.io%2FFleury-%E7%AE%97%E6%B3%95.html</url>
     <content type="text"><![CDATA[Fleury 算法Fleury算法是从离散书上看到的，书上详细的写了算法的操作。在这里用主要用C语言实现。在这里隆重感谢曹老板的鼎力支持。膜拜~ 伪代码输入 ：欧拉图 任取 v0∈V(G),令P0 = v0 ，i = 0. 设 Pi = v0e0v1e1……eivi, 如果E（G） - {e1,e2……ei}中没有与vi关联的边则计算停止；否则按下述条件从E（G） -{e1，e2，……ei}中任取一条边ei+1： ​ （a） ei+1与vi相关联； ​ （b） 除非无别的边可提供，否则ei+1不应该为Gi = G-{e1，e2，……ei}中的桥。 ​ 设ei+1=（vi,vi+1）,把ei+1,vi+1加入pi得到pi+1. 令i=i+1，返回2. 实现#include&lt;stdio.h&gt;void fleury ();int Bridge (int m, int k);int eulertu[10000][10000] = 0;int V,E;int main (){ printf(“顶点数：”); scanf(“%d”,&amp;V); printf(“边数：”); scanf(“%d”,&amp;E); //输入几个点，几条边 int i,j; int m,n; int count; int o=1; printf(“输入有边的俩个点:\n”); for (i = 0; i &lt; E; i++) { scanf(&quot;%d %d&quot;,&amp;m,&amp;n); //输入有边的俩个点 eulertu[m][n] = eulertu[n][m] = 1; } for (i = 0; i &lt; V; i++) //判断是否为欧拉图 { count = 0; for (j = 0; j &lt; V; j++) { if (eulertu[i][j]==1) count++; } if (count%2!=0) { printf(&quot;不是欧拉图&quot;); o=0; break; } if(o==0) break; } if(o==1) { fleury(); printf(&quot;end&quot;); } return 0; } void fleury (){ int a[10000] ={0}; int i,j; int k = 0; int bridge = 1; int t; printf(“%d—&gt;”,a[0]); for (i = 0; i &lt; E; i++) { for (j = 0; j &lt; V; j++) { if(eulertu[a[k]][j]==1) { eulertu[a[k]][j] = eulertu[j][a[k]] = 0; if(Bridge(a[k],j)) { t = j; eulertu[a[k]][j] = eulertu[j][a[k]] = 1; } else { k++; a[k] = j; printf(“%d—&gt;”,j); bridge = 0; break; } } } if (bridge) { eulertu[a[k]][t] = eulertu[t][a[k]] = 0; k++; a[k] = t; printf(&quot;%d---&gt;&quot;,t); } bridge = 1; } } int Bridge (int m, int k){ int a[10000]; int i = 0; int t = 0; int n = 0; int p = 0; for(i=0;i&lt;10000;i++) a[i]=-1; a[t] = m; for (t = 0; a[t] != -1; t++ ) { for (i = 0; i &lt; V; i++) { if (eulertu[a[t]][i] == 1 &amp;&amp; i == k) return 0; if (eulertu[a[t]][i] == 1) { p=0; while(a[p]==-1) { p++; n++; a[n] = i; } } } } return 1; }]]></content>
