@@ -77,7 +77,16 @@
 
 
 
-
+<script>
+    (function(){
+        if(''){
+            if (prompt('请输入文章密码') !== ''){
+                alert('密码错误！');
+                history.back();
+            }
+        }
+    })();
+</script>
 
 <script id="hexo.configurations">
   var NexT = window.NexT || {};
@@ -121,8 +130,6 @@
 <meta name="twitter:title" content="categories">
 <meta name="twitter:description" content="C/C++ Python hexo life 数学建模">
 
-
-  
 
 
   <link rel="alternate" href="/AngelNI.github.io/atom.xml" title="Angel_Sky" type="application/atom+xml">
