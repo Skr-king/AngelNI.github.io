@@ -27,7 +27,16 @@
 <meta name="google-site-verification" content="JwzmnANXlpmQlhwaSORuqpEB6P3Sr-tRhw4R_XDRcEc">
 <meta name="baidu-site-verification" content="FuVMjR3XvV">
 
-
+<script>
+    (function(){
+        if(''){
+            if (prompt('请输入文章密码') !== ''){
+                alert('密码错误！');
+                history.back();
+            }
+        }
+    })();
+</script>
 
 
 
@@ -77,16 +86,7 @@
 
 
 
-<script>
-    (function(){
-        if(''){
-            if (prompt('请输入文章密码') !== ''){
-                alert('密码错误！');
-                history.back();
-            }
-        }
-    })();
-</script>
+
 
 <script id="hexo.configurations">
   var NexT = window.NexT || {};
@@ -130,6 +130,8 @@
 <meta name="twitter:title" content="Angel_Sky">
 <meta name="twitter:description" content="google-site-verification: googleaf6c0bcacf38c39b.html">
 
+
+  
 
 
   <link rel="alternate" href="/AngelNI.github.io/atom.xml" title="Angel_Sky" type="application/atom+xml">
