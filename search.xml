@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[俄罗斯方块]]></title>
+    <url>%2FAngelNI.github.io%2F%E4%BF%84%E7%BD%97%E6%96%AF%E6%96%B9%E5%9D%97.html</url>
+    <content type="text"><![CDATA[俄罗斯方块嘿！小伙伴们，还记得俄罗斯方块吗？想必每个人都玩过这个简单刺激的小游戏吧！ 在这里分享给大家一个小游戏——俄罗斯方块 大爷！来玩呦 github项目地址 点我呦 百度云下载 点我呦 提取码：wb6q]]></content>
+      <categories>
+        <category>Game</category>
+      </categories>
+      <tags>
+        <tag>Game</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[大数取模]]></title>
     <url>%2FAngelNI.github.io%2F%E5%A4%A7%E6%95%B0%E5%8F%96%E6%A8%A1.html</url>
     <content type="text"><![CDATA[大数取模THIS A SAD STORY…… 頑張って 介绍取模想必大家都知道，比如7%5=2，10%3=1，当然了，这还只是简单的取模，适用于不超过计算机整数范围。如果超过了该怎么办呢？ 今天，这里介绍的就是大数取模。 一般取模大数储存对一个相当大的数，C语言里的整形是无法储存的，在这里，我们用字符串储存。 取模方法模仿我们曾学过的竖式乘除法。 对于一个大数 A ，他从高到低的每一位乘以10再对mod取余，最后的结果就是取模的结果。 ` 12345678910111213141516171819202122232425#include&lt;iostream&gt;#include&lt;cstring&gt;using namespace std;#define MOD 100000007long divmod(char *ch,int a)&#123; long s = 0; for(int i=0;ch[i]!=&apos;\0&apos;;i++) &#123; s=(s*10+ch[i]-&apos;0&apos;)%MOD; &#125; return s;&#125;int main()&#123; long a,b; char num[100000]; gets(num); a = strlen(num); b = divmod(num,a); printf(&quot;%ld&quot;,b); return 0; &#125; ` 快速幂取模对于一般的大数取模，时间复杂度太大，可能会TE了。对于指数型的大数取模问题，，快速幂取模就简单方便多了，在空间和时间上相对于一般取模都做了优化。 方法快速幂取模的方法基于离散数学或数论的一条公式推导引理。 积的取余等于取余的积的取余 在这个定义的基础上对指数型数据进行拆分以及合并，从而实现快速幂取模。 举个栗子求（3^40）mod 6。 (3^40)–&gt;(9^20)–&gt;(18^10) ……这样依次类推 这里指数幂是偶数，如果是奇数先乘在重复上述工作。 再这里有一个简单判断奇偶数的方法。附上代码 123456789101112#include&lt;stdio.h&gt;int main()&#123; int n; while(~scanf(&quot;%d&quot;,&amp;n))&#123; if(n&amp;1) printf(&quot;奇数&quot;); else printf(&quot;偶数&quot;);&#125; return 0;&#125; 这里简单的运用了位运算。这比一般奇偶的判断高大上多了。活到老学到老。。。 实现12345678910111213long powermode(long a, long b, long mod)&#123; long ans = 1; while (b) &#123; if (b &amp; 1) &#123; ans = (ans * a) % mod; b--; &#125; b /= 2; a = a * a % mod; &#125; return ans;&#125; 补充对于大数取模还有欧拉函数（费马小定理），技巧去摸，这里不多介绍，后续会补上 ###]]></content>
