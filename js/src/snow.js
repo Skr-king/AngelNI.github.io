@@ -6,7 +6,7 @@
 	documentWidth	= $(document).width(),
 	defaults = {
 		minSize		: 10,
-		maxSize		: 30,
+		maxSize		: 50,
 		newOn		: 1000,
 		flakeColor	: "FF4500" /* 此处可以定义雪花颜色，若要白色可以改为#FFFFFF */
 	},
