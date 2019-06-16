@@ -12,6 +12,11 @@
       </tags>
   </entry>
   <entry>
+    <title><![CDATA[简单并查集]]></title>
+    <url>%2FAngelNI.github.io%2F%E7%AE%80%E5%8D%95%E5%B9%B6%E6%9F%A5%E9%9B%86.html</url>
+    <content type="text"></content>
+  </entry>
+  <entry>
     <title><![CDATA[CET4]]></title>
     <url>%2FAngelNI.github.io%2FCET4.html</url>
     <content type="text"><![CDATA[CET4COME ON !!!]]></content>
@@ -21,11 +26,6 @@
       <tags>
         <tag>life</tag>
       </tags>
-  </entry>
-  <entry>
-    <title><![CDATA[简单并查集]]></title>
-    <url>%2FAngelNI.github.io%2F%E7%AE%80%E5%8D%95%E5%B9%B6%E6%9F%A5%E9%9B%86.html</url>
-    <content type="text"></content>
   </entry>
   <entry>
     <title><![CDATA[俄罗斯方块]]></title>
@@ -224,8 +224,8 @@
         <category>Markdown语法</category>
       </categories>
       <tags>
-        <tag>python学习</tag>
         <tag>Markdown</tag>
+        <tag>python学习</tag>
       </tags>
   </entry>
   <entry>
